@@ -1,0 +1,28 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutterforiosmodule (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `../flutter_forios_module/.ios/Flutter/engine`)
+  - flutterforiosmodule (from `../flutter_forios_module/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../flutter_forios_module/.ios/Flutter/FlutterPluginRegistrant`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../flutter_forios_module/.ios/Flutter/engine"
+  flutterforiosmodule:
+    :path: "../flutter_forios_module/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../flutter_forios_module/.ios/Flutter/FlutterPluginRegistrant"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutterforiosmodule: 6178dc7f5e45c13872a9c179bba07eb5e96b9e0b
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
+
+PODFILE CHECKSUM: a5e4144e5b20acfc0643aff087b1dd9ad3e57b2b
+
+COCOAPODS: 1.9.2

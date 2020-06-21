@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+# 注意下边的路径  flutter_application_path 项目目录必须在一起哦
+flutter_application_path = '../flutter_forios_module'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+platform :ios, '11.0'
+
+target 'IOSNativeWithFlutterModule' do
+  install_all_flutter_pods(flutter_application_path)
+  use_frameworks!
+
+  # Pods for IOSNativeWithFlutterModule
+
+end

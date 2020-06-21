@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-IOSNativeWithFlutterModule/Pods-IOSNativeWithFlutterModule-frameworks.sh
+${PODS_ROOT}/../../flutter_forios_module/.ios/Flutter/engine/Flutter.framework
+${PODS_ROOT}/../../flutter_forios_module/.ios/Flutter/App.framework

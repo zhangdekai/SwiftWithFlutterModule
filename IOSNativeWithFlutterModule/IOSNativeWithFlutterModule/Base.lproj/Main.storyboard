@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOSNativeWithFlutterModule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eur-cD-kPI">
+                                <rect key="frame" x="150.5" y="221" width="113" height="30"/>
+                                <state key="normal" title="跳转Flutter页面1"/>
+                                <connections>
+                                    <action selector="jumpToFlutter1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57y-re-kZc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1q5-eB-A8w">
+                                <rect key="frame" x="149.5" y="326" width="115" height="30"/>
+                                <state key="normal" title="跳转Flutter页面2"/>
+                                <connections>
+                                    <action selector="jumpToFlutter2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oYZ-GK-oas"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我展示flutter传来的信息" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mg2-jn-fRA">
+                                <rect key="frame" x="114.5" y="408" width="185" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1q5-eB-A8w" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="05c-dM-106"/>
+                            <constraint firstItem="eur-cD-kPI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="177" id="1TT-dp-keu"/>
+                            <constraint firstItem="eur-cD-kPI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4k4-xc-umO"/>
+                            <constraint firstItem="mg2-jn-fRA" firstAttribute="top" secondItem="1q5-eB-A8w" secondAttribute="bottom" constant="52" id="9CC-uP-c34"/>
+                            <constraint firstItem="1q5-eB-A8w" firstAttribute="top" secondItem="eur-cD-kPI" secondAttribute="bottom" constant="75" id="DUJ-uU-hbt"/>
+                            <constraint firstItem="mg2-jn-fRA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ni4-fX-3hV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="flutterMsgLable" destination="mg2-jn-fRA" id="1ue-yg-Obz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="121"/>
+        </scene>
+    </scenes>
+</document>
