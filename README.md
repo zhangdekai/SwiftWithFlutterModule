@@ -1,0 +1,2 @@
+# SwiftWithFlutterModule
+Swift项目，跳转到部分Flutter页面，是混合开发。Flutter页面启用，内存占比会很高，注意模块化Flutter的页面，不要在原生IOS里加入太多
